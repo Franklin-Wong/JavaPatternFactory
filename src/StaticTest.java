@@ -3,8 +3,8 @@
  */
 public class StaticTest {
 
-    private static int staticInt = 2;//¾²Ì¬±äÁ¿
-    private int random = 2;//ÊµÀý±äÁ¿
+    private static int staticInt = 2;//ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½
+    private int random = 2;//Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
     public  StaticTest() {
         staticInt++;
@@ -12,8 +12,13 @@ public class StaticTest {
         System.out.println("staticInt = "+staticInt+"  random = "+random);
     }
 
+    static {
+        System.out.println("static block");
+    }
+
     public static void main(String[] args) {
-        StaticTest test = new StaticTest();
-        StaticTest test2 = new StaticTest();
+
+//        StaticTest test = new StaticTest();
+//        StaticTest test2 = new StaticTest();
     }
 }
