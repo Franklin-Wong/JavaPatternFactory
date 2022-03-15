@@ -6,9 +6,6 @@ public class LockDemo {
 
     }
 
-
-
-
     class Lock{
 
 

@@ -4,7 +4,7 @@ import java.lang.reflect.Constructor;
 
 public class SingletonFactory {
 	private static Singleton singleton;
-	static{//通过类构造器获取实例
+	static{//通锟斤拷锟洁构锟斤拷锟斤拷锟斤拷取实锟斤拷
 		try {
 			Class<?> c = Class.forName(Singleton.class.getName());
 			Constructor<?> constructor = c.getDeclaredConstructor(null);
