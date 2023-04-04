@@ -14,12 +14,11 @@ public class LinkedListDemo {
         for (int i = 0; i < 10; i++) {
             ListNode node = new ListNode("node:" + i);
             linkedList.add(node);
+            System.out.println("linkedList = " + linkedList.get(i).node);
         }
         for (int i = 0; i < 10; i++) {
-
-            System.out.println(reverseList(linkedList.get(i)).node);
-            System.out.println(reverseList(linkedList.get(i)).next);
-
+            System.out.println("reverseList(linkedList.get(i)).node = " + reverseList(linkedList.get(i)).node);
+            System.out.println("reverseList(linkedList.get(i)).next = " + reverseList(linkedList.get(i)).next);
         }
     }
 

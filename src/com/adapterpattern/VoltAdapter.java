@@ -1,4 +1,4 @@
-package adapterpattern;
+package com.adapterpattern;
 
 public class VoltAdapter extends Volt220 implements FiveVolt{
 

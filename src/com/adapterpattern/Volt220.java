@@ -1,4 +1,4 @@
-package adapterpattern;
+package com.adapterpattern;
 
 public class Volt220 {
 	public int getVolt220(){

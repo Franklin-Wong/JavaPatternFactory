@@ -1,9 +1,9 @@
-package adapterpattern;
+package com.adapterpattern;
 
 public class Test {
 
 	public static void main(String[] args) {
 		VoltAdapter adapter = new VoltAdapter(new Volt220());
-		System.out.println("Êä³öµçÑ¹ £º"+adapter.getVolt5());
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¹ ï¿½ï¿½"+adapter.getVolt5());
 	}
 }

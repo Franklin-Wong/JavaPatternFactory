@@ -1,9 +1,10 @@
 package com.algorithm;
 
+import java.util.LinkedList;
 import java.util.Stack;
 
 public class ListReverse {
-        public void reverseList(ListNode listNode){
+        public static void reverseList(ListNode listNode){
 
             Stack<ListNode> stack = new Stack();
             if(listNode != null){
@@ -11,7 +12,6 @@ public class ListReverse {
             }
             while(listNode.head != null){
                 stack.push(listNode.head);
-
             }
 
             ListNode last = null;
@@ -26,11 +26,16 @@ public class ListReverse {
 
         }
 
+    public static void main(String[] args) {
+        LinkedList<ListNode> listNodes = new LinkedList<>();
+        reverseList(new ListNode());
+    }
 }
 
 class ListNode{
     ListNode head;
-    public ListNode(){}
+    int index;
+
 }
 
 
